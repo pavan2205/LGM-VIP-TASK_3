@@ -28,6 +28,7 @@ input[type="text"]{
     width:97%;
     font-size: 20px;
     background-color: #9dada3;
+    padding: 0.2rem ;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
 }
 #operator1,#operator2,#operator3,#operator4{
@@ -49,4 +50,18 @@ input[type="text"]{
 #backspace{
     background-color: #4573c8;
     font-size: 18px;
+}
+.click{
+    animation: animate 0.1s ease-in-out;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

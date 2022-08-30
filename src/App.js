@@ -6,6 +6,7 @@ function App() {
   useEffect(()=>inputRef.current.focus())
   function handleclick(e){
     setResult(result.concat(e.target.name));
+    e.target.classList.add('click');
   }
   function clearUp(){
     setResult("");
